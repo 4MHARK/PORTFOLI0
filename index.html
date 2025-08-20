@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
 </head>
 
 <body>
@@ -14,17 +17,18 @@
         <div class="header">
             <div class="navbar">
                 <div class="logo">
-                    <img src="images/logo.png" alt="dav.dev" width="125px">
+                    <!-- <img src="img/ChatGPT Image Aug 19, 2025, 01_26_31 AM.png" alt="dav.dev" width="125px"> -->
                 </div>
                 <nav>
                     <ul id="MenuItems" class="nav-links">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">Work</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
+                        <li><a href="#portfolio">Work</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#about-stats">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
-                <button>Hire Me</button>
+                <button a href="#contact">Hire Me</button>
             </div>
         </div>
     </section>
@@ -45,7 +49,7 @@
     </section>
     <!-- ABOUT ME -->
 
-<section>
+<section id="about">
 
 <div class="about">
     <h2 class="second-title">About Me</h2>
@@ -65,7 +69,7 @@
             My approach is rooted in clean code, design precision, and reliable delivery.
         </p>
     </div>
-    <div class="about-stats">
+    <div class="about-stats" id="about-stats">
         <div class="stat">
           <h4 class="stat-number" data-suffix="+">10</h4>
           <p class="stat-label">Projects Completed</p>
@@ -207,8 +211,8 @@
           <!-- Contact Info -->
           <div class="contact-info">
             <h3>Contact Information</h3>
-            <p><strong>Email:</strong> yourname@email.com</p>
-            <p><strong>Phone:</strong> +234 801 234 5678</p>
+            <p><strong>Email:</strong> mharkdavid713@gmail.com</p>
+            <p><strong>Phone:</strong> +234 9031843219</p>
             <div class="socials">
               <a href="#"><i class="fab fa-github"></i></a>
               <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -217,10 +221,10 @@
           </div>
       
           <!-- Contact Form -->
-          <form class="contact-form">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
+          <form class="contact-form" action="https://formspree.io/f/xgvzjpqj" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
           </form>
         </div>
@@ -237,18 +241,13 @@
       </div>
   
       <!-- Middle: Navigation -->
-      <ul class="footer-nav">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+   
   
       <!-- Right: Socials -->
       <div class="footer-socials">
-        <a href="#"><i class="fab fa-github">HI</i></a>
-        <a href="#"><i class="fab fa-linkedin">HI</i></a>
-        <a href="#"><i class="fab fa-twitter">HI</i></a>
+        <a href="https://github.com/4MHARK"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/mhark-david-177b4731a/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://x.com/ClutchFather"><i class="fab fa-twitter"></i></a>        
       </div>
     </div>
   

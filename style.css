@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
 /* header  */
 .header { 
     position: fixed;
@@ -108,15 +111,27 @@
 .hero::after {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle, rgba(214, 237, 23, 0.1) 0%, transparent 70%); /* A subtle glowing circle */
+    inset: 0;
+    background: radial-gradient(circle, rgba(214, 237, 23, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
     opacity: 0;
-    transform: scale(0);
-    pointer-events: none; /* Allows clicks to pass through */
+    transform: scale(0.5);
+    animation: rippleGlow 4s infinite ease-out;
+    pointer-events: none;
 }
+
+@keyframes rippleGlow {
+    0% {
+        opacity: 0.6;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(2.5);
+    }
+}
+
+  
 .hero-content{
     opacity: 0;
     transform: translateY(-50px);
@@ -129,7 +144,6 @@ transition: opacity 1s ease-out, transform 1s ease-out;
     opacity: 1;
     transform: translateX(0);
   }
-  
   .hero-image.is-visible {
     opacity: 1;
     transform: translateX(0);
@@ -179,15 +193,16 @@ color: #d6ed17;
     height: auto;
     border-radius: 50px;
     border: 3px solid #b6ed17;
+    
 }
 @keyframes slideInLeft {
     from {
         opacity: 0;
-        transform: translateX(-50px);
+        transform: translateX(-70px);
     }
     to {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateX(-10);
     }
 }
 
@@ -201,17 +216,7 @@ color: #d6ed17;
         transform: translateX(0);
     }
 }
-@keyframes colorChange {
-    0% {
-        background-color: #000e18;
-    }
-    50% {
-        background-color: #001f2d;
-    }
-    100% {
-        background-color: #000e18;
-    }
-}
+
 
 /* ABOUT ME */
 .about{
@@ -225,7 +230,9 @@ font-size: 2.5rem;
 margin-bottom: 50px;
 font-weight: 700;
 color: #d6ed17;
+animation: SlideFromTop 1s ease-in;
 }
+
 .about-container{
     display: flex;
     align-items: center;
@@ -256,6 +263,7 @@ color: #b5cb13;
     margin-bottom: 20px;
 color: #b6ed17;
 }
+
 .about-stats{
     display: flex;
     gap: 30px;
