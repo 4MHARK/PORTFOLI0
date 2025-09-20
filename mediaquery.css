@@ -1,92 +1,111 @@
 @media (max-width: 768px) {
-    .navbar {
-      padding: 1rem;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    .nav-links {
-      flex-direction: column;
-      width: 100%;
-      margin-top: 1rem;
-      display: none; /* Hide the links initially for a mobile menu */
-    }
-    .nav-links.active { /* Use a JS class to show the menu */
-      display: flex;
-    }
-    .nav-links li {
-      margin: 0.5rem 0;
-    }
-    .navbar button {
-      display: none; /* Or adjust its position */
-    }
+  .navbar {
+    padding: 0 1rem;
+    align-items: center;
+    display: flex;
   }
-  @media (max-width: 768px) {
-    .hero {
-      flex-direction: column;
-      padding: 5rem 5%;
-      height: auto; /* Allow height to adjust */
-    }
-    .hero-content {
-      max-width: 100%;
-      text-align: center;
-    }
-    .hero-content h1 {
-      font-size: 2.5rem;
-    }
-    .hero-content h2,
-    .hero-content p {
-      font-size: 1rem;
-    }
-    .hero-image {
-      margin-top: 2rem;
-      text-align: center;
-    }
-    .hero-image img {
-      max-width: 80%;
-      margin-left: 0;
-    }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+    position: absolute;
   }
-  @media (max-width: 768px) {
-    .about,
-    .portfolio,
-    .testimonials,
-    .contact,
-    .footer {
-      padding: 50px 5%; /* Smaller padding for all sections */
-    }
-    .about-container,
-    .about-stats,
-    .skills-grid,
-    .portfolio-container,
-    .testimonials-container,
-    .contact-container,
-    .footer-container {
-      flex-direction: column;
-      gap: 20px;
-      align-items: center;
-    }
-    .about-photo img {
-      width: 250px; /* Make the photo smaller */
-    }
-    .about-content,
-    .contact-info,
-    .contact-form {
-      max-width: 100%;
-      text-align: center;
-    }
-    .skills-grid {
-      grid-template-columns: 1fr;
-    }
+  .nav-links li {
+    margin: 0.5rem 0;
   }
-  @media (max-width: 768px) {
-    /* This will target screens up to 768px wide */
-    .portfolio-container {
-      flex-direction: column; /* Stacks the project boxes vertically */
-      align-items: center; /* Centers the boxes in the column */
-    }
-  
-    .portfolio-box {
-      width: 90%; /* Makes each box take up most of the screen width */
-      height: auto; /* Allows the height to adjust to the content */
-    }
+  .nav-links2 {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+    position: absolute;
   }
+  .nav-links2 li {
+    margin: 0.5rem 0;
+  }
+  .navbar button {
+    display: none; /* Or adjust its position */
+  }
+  .toggle {
+    display: block !important;
+    padding: 0.3rem 0.6rem !important;
+    font-size: 0.5rem !important;
+  }
+  .hidden {
+    display: none;
+  }
+  .show {
+    display: flex !important;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    padding: 10rem 5% 5rem;
+    height: auto; /* Allow height to adjust */
+  }
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .hero-content h2,
+  .hero-content p {
+    font-size: 1rem;
+  }
+  .hero-image {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .hero-image img {
+    max-width: 80%;
+    margin-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .about,
+  .portfolio,
+  .testimonials,
+  .contact,
+  .footer {
+    padding: 50px 5%; /* Smaller padding for all sections */
+  }
+  .about-container,
+  .about-stats,
+  .skills-grid,
+  .portfolio-container,
+  .testimonials-container,
+  .contact-container,
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .about-photo img {
+    width: 250px; /* Make the photo smaller */
+  }
+  .about-content,
+  .contact-info,
+  .contact-form {
+    max-width: 100%;
+    text-align: center;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  /* This will target screens up to 768px wide */
+  .portfolio-container {
+    flex-direction: column; /* Stacks the project boxes vertically */
+    align-items: center; /* Centers the boxes in the column */
+  }
+
+  .portfolio-box {
+    width: 90%; /* Makes each box take up most of the screen width */
+    height: auto; /* Allows the height to adjust to the content */
+  }
+}

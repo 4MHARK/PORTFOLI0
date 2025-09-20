@@ -133,3 +133,10 @@ gsap.utils.toArray(".stat-number").forEach(function(el) {
       
   
 
+const toggleButton = document.querySelector('.toggle');
+const navLinks = document.querySelector('.nav-links2');
+
+toggleButton.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+  console.log('clicked');
+});
