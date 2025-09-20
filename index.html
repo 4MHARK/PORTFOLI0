@@ -1,212 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ademola David</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquery.css" />
+  </head>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaquery.css">
-</head>
-
-<body>
+  <body>
     <!-- HEADER -->
     <section>
-        <div class="header">
-            <div class="navbar">
-                <div class="logo">
-                    <!-- <img src="img/ChatGPT Image Aug 19, 2025, 01_26_31 AM.png" alt="dav.dev" width="125px"> -->
-                </div>
-                <nav>
-                    <ul id="MenuItems" class="nav-links">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#portfolio">Work</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#about-stats">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-                <button a href="#contact">Hire Me</button>
-            </div>
+      <div class="header">
+        <div class="navbar">
+          <div class="logo">
+            <a href="#">
+              <img src="./img/logo.png" id="logo" alt="Logo">
+            </a>
+          </div>
+          <nav>
+            <ul id="MenuItems" class="nav-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#portfolio">Work</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#about-stats">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <button a href="#contact">Hire Me</button>
         </div>
+      </div>
     </section>
 
     <!-- HERO SECTION  -->
     <section>
-        <div class="hero">
-            <div class="hero-content">
-                <h1>Hi I'm Ademola David</h1>
-                <h2>Frontend Developer & Designer</h2>
-                <p>I create modern, smooth, and user-focused web experiences.</p>
-                <button class="hero-btn">View My Works</button>
-            </div>
-            <div class="hero-image">
-                <img src="img/IMG_20240128_171556_673.jpg" alt="David">
-            </div>
+      <div class="hero">
+        <div class="hero-content">
+          <h1>Hi I'm Ademola David</h1>
+          <h2>Frontend Developer & Designer</h2>
+          <p>I create modern, smooth, and user-focused web experiences.</p>
+          <button class="hero-btn">View My Works</button>
         </div>
+        <div class="hero-image">
+          <img src="img/IMG_20240128_171556_673.jpg" alt="David" />
+        </div>
+      </div>
     </section>
     <!-- ABOUT ME -->
 
-<section id="about">
+    <section id="about">
+      <div class="about">
+        <h2 class="second-title">About Me</h2>
+        <div class="about-container">
+          <div class="about-photo">
+            <img src="img/IMG_20240128_171556_673.jpg" alt="" />
+          </div>
+          <div class="aboutText">
+            <div class="about-content">
+              <h3 class="about-headline">
+                Building High-Performing Websites That Drive Results
+              </h3>
+              <p class="about-text">
+                I’m a frontend developer specializing in responsive,
+                performance-driven websites. With hands-on experience in HTML,
+                CSS, JavaScript, React, and animation libraries like GSAP, I help
+                businesses create digital products that stand out and deliver
+                measurable value. My approach is rooted in clean code, design
+                precision, and reliable delivery.
+              </p>
+            </div>
+            <div class="about-stats" id="about-stats">
+              <div class="stat">
+                <h4 class="stat-number" data-suffix="+">10</h4>
+                <p class="stat-label">Projects Completed</p>
+              </div>
+              <div class="stat">
+                <h4 class="stat-number" data-suffix="+">2</h4>
+                <p class="stat-label">Years Experience</p>
+              </div>
+              <div class="stat">
+                <h4 class="stat-number" data-suffix="%">100</h4>
+                <p class="stat-label">Client Satisfaction</p>
+              </div>
+  
+              <a href="contact" class="btn about-btn">Let's Work Together</a>
+            </div>
+          </div>
+        </div>
+        <div class="skills-grid">
+          <div class="skill">
+            <span class="skill-name">HTML</span>
+            <div class="skill-bar">
+              <div class="skill-fill" data-skill="90"></div>
+            </div>
+            <span class="skill-percent">0%</span>
+          </div>
 
-<div class="about">
-    <h2 class="second-title">About Me</h2>
-<div class="about-container"> 
-     <div class="about-photo">
-        <img src="img/IMG_20240128_171556_673.jpg" alt="">
-    </div>
+          <div class="skill">
+            <span class="skill-name">CSS</span>
+            <div class="skill-bar">
+              <div class="skill-fill" data-skill="90"></div>
+            </div>
+            <span class="skill-percent">0%</span>
+          </div>
 
-    <div class="about-content"> 
-        <h3 class="about-headline">
-            Building High-Performing Websites That Drive Results
-        </h3>
-        <p class="about-text">
-            I’m a frontend developer specializing in responsive, performance-driven websites. 
-            With hands-on experience in HTML, CSS, JavaScript, React, and animation libraries like GSAP, 
-            I help businesses create digital products that stand out and deliver measurable value. 
-            My approach is rooted in clean code, design precision, and reliable delivery.
-        </p>
-    </div>
-    <div class="about-stats" id="about-stats">
-        <div class="stat">
-          <h4 class="stat-number" data-suffix="+">10</h4>
-          <p class="stat-label">Projects Completed</p>
-        </div>
-        <div class="stat">
-          <h4 class="stat-number" data-suffix="+">2</h4>
-          <p class="stat-label">Years Experience</p>
-        </div>
-        <div class="stat">
-          <h4 class="stat-number" data-suffix="%">100</h4>
-          <p class="stat-label">Client Satisfaction</p>
-        </div>
+          <div class="skill">
+            <span class="skill-name">JavaScript</span>
+            <div class="skill-bar">
+              <div class="skill-fill" data-skill="30"></div>
+            </div>
+            <span class="skill-percent">0%</span>
+          </div>
 
-        <a href="contact" class="btn about-btn">Let's Work Together</a>
-      </div>
-</div>
-<div class="skills-grid">
-    <div class="skill">
-      <span class="skill-name">HTML</span>
-      <div class="skill-bar">
-        <div class="skill-fill" data-skill="90"></div>
-      </div>
-      <span class="skill-percent">0%</span>
-    </div>
-  
-    <div class="skill">
-        <span class="skill-name">CSS</span>
-        <div class="skill-bar">
-          <div class="skill-fill" data-skill="90"></div>
+          <div class="skill">
+            <span class="skill-name">React</span>
+            <div class="skill-bar">
+              <div class="skill-fill" data-skill="25"></div>
+            </div>
+            <span class="skill-percent">0%</span>
+          </div>
+
+          <div class="skill">
+            <span class="skill-name">GSAP</span>
+            <div class="skill-bar">
+              <div class="skill-fill" data-skill="5"></div>
+            </div>
+            <span class="skill-percent">0%</span>
+          </div>
+
+          <div class="skill">
+            <span class="skill-name">GitHub</span>
+            <div class="skill-bar">
+              <div class="skill-fill" data-skill="50"></div>
+            </div>
+            <span class="skill-percent">0%</span>
+          </div>
         </div>
-        <span class="skill-percent">0%</span>
       </div>
-  
-    <div class="skill">
-      <span class="skill-name">JavaScript</span>
-      <div class="skill-bar">
-        <div class="skill-fill" data-skill="30"></div>
-      </div>
-      <span class="skill-percent">0%</span>
-    </div>
-  
-    <div class="skill">
-      <span class="skill-name">React</span>
-      <div class="skill-bar">
-        <div class="skill-fill" data-skill="25"></div>
-      </div>
-      <span class="skill-percent">0%</span>
-    </div>
-  
-    <div class="skill">
-      <span class="skill-name">GSAP</span>
-      <div class="skill-bar">
-        <div class="skill-fill" data-skill="5"></div>
-      </div>
-      <span class="skill-percent">0%</span>
-    </div>
-  
-    <div class="skill">
-      <span class="skill-name">GitHub</span>
-      <div class="skill-bar">
-        <div class="skill-fill" data-skill="50"></div>
-      </div>
-      <span class="skill-percent">0%</span>
-    </div>
-  </div>
-</div>
-</section>
-<!-- MY PROJECT SECTION -->
-<section>
-    <div class="portfolio" id="portfolio">
+    </section>
+    <!-- MY PROJECT SECTION -->
+    <section>
+      <div class="portfolio" id="portfolio">
         <h2 class="section-title">Featured Works</h2>
-      
+
         <div class="portfolio-container">
           <div class="portfolio-box">
-            <img src="img/Screen.png" alt="">
+            <img src="img/Screen.png" alt="" />
             <div class="portfolio-overlay">
               <h3>ECANTIO</h3>
-              <a href="https://4mhark.github.io/Encantio/" target="_blank" class="portfolio-btn">View Live</a>
+              <a
+                href="https://4mhark.github.io/Encantio/"
+                target="_blank"
+                class="portfolio-btn"
+                >View Live</a
+              >
             </div>
           </div>
-      
+
           <div class="portfolio-box">
-            <img src="img/project2-preview.jpg" alt="Project 2">
+            <img src="img/project2-preview.jpg" alt="Project 2" />
             <div class="portfolio-overlay">
               <h3>Project 2</h3>
-              <a href="https://livewebsite2.com" target="_blank" class="portfolio-btn">View Live</a>
+              <a
+                href="https://livewebsite2.com"
+                target="_blank"
+                class="portfolio-btn"
+                >View Live</a
+              >
             </div>
           </div>
-      
+
           <div class="portfolio-box">
-            <img src="img/project3-preview.jpg" alt="Project 3">
+            <img src="img/project3-preview.jpg" alt="Project 3" />
             <div class="portfolio-overlay">
               <h3>Project 3</h3>
-              <a href="https://livewebsite3.com" target="_blank" class="portfolio-btn">View Live</a>
+              <a
+                href="https://livewebsite3.com"
+                target="_blank"
+                class="portfolio-btn"
+                >View Live</a
+              >
             </div>
           </div>
         </div>
       </div>
-</section>
-  <!-- TESTIMONIAL -->
-<section>
-    <div class="testimonials" id="testimonials">
+    </section>
+    <!-- TESTIMONIAL -->
+    <section>
+      <div class="testimonials" id="testimonials">
         <h2 class="section-title">What People Say</h2>
         <p class="section-subtitle">Feedback from clients and collaborators</p>
-      
+
         <div class="testimonials-container">
           <div class="testimonial-card">
-            <img src="img/client1.jpg" alt="Client 1">
-            <p>“Ademola is a highly creative and detail-oriented frontend developer. 
-            He transformed our website into something modern and smooth!”</p>
+            <img src="img/client1.jpg" alt="Client 1" />
+            <p>
+              “Ademola is a highly creative and detail-oriented frontend
+              developer. He transformed our website into something modern and
+              smooth!”
+            </p>
             <h4>Jane Doe</h4>
             <span>CEO, StartupX</span>
           </div>
-      
+
           <div class="testimonial-card">
-            <img src="img/client2.jpg" alt="Client 2">
-            <p>“Working with David was a fantastic experience. 
-            His GSAP animations brought our landing page to life.”</p>
+            <img src="img/client2.jpg" alt="Client 2" />
+            <p>
+              “Working with David was a fantastic experience. His GSAP
+              animations brought our landing page to life.”
+            </p>
             <h4>Michael Smith</h4>
             <span>Product Manager, WebFlow</span>
           </div>
-      
+
           <div class="testimonial-card">
-            <img src="img/client3.jpg" alt="Client 3">
-            <p>“Professional, reliable, and skilled. Highly recommend him 
-            for any frontend work.”</p>
+            <img src="img/client3.jpg" alt="Client 3" />
+            <p>
+              “Professional, reliable, and skilled. Highly recommend him for any
+              frontend work.”
+            </p>
             <h4>Sarah Johnson</h4>
             <span>Freelance Designer</span>
           </div>
         </div>
       </div>
-</section>
-<section>
-    <div class="contact" id="contact">
+    </section>
+    <section>
+      <div class="contact" id="contact">
         <h2 class="section-title">Get In Touch</h2>
         <p class="section-subtitle">Let’s build something great together 🚀</p>
-      
+
         <div class="contact-container">
           <!-- Contact Info -->
           <div class="contact-info">
@@ -219,48 +247,62 @@
               <a href="#"><i class="fab fa-twitter"></i></a>
             </div>
           </div>
-      
+
           <!-- Contact Form -->
-          <form class="contact-form" action="https://formspree.io/f/xgvzjpqj" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/xgvzjpqj"
+            method="POST"
+          >
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Your Message"
+              required
+            ></textarea>
             <button type="submit">Send Message</button>
           </form>
         </div>
       </div>
-</section>
-    
-<!-- FOOTER -->
-<footer class="footer">
-    <div class="footer-container">
-      <!-- Left: Logo/Name -->
-      <div class="footer-logo">
-        <h2>Ademola David</h2>
-        <p>Frontend Developer & Designer</p>
-      </div>
-  
-      <!-- Middle: Navigation -->
-   
-  
-      <!-- Right: Socials -->
-      <div class="footer-socials">
-        <a href="https://github.com/4MHARK"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/mhark-david-177b4731a/"><i class="fab fa-linkedin"></i></a>
-        <a href="https://x.com/ClutchFather"><i class="fab fa-twitter"></i></a>        
-      </div>
-    </div>
-  
-    <div class="footer-bottom">
-      <p>© 2025 Ademola David. All Rights Reserved.</p>
-    </div>
-  </footer>
-  
+    </section>
 
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Left: Logo/Name -->
+        <div class="footer-logo">
+          <h2>Ademola David</h2>
+          <p>Frontend Developer & Designer</p>
+        </div>
+
+        <!-- Middle: Navigation -->
+
+        <!-- Right: Socials -->
+        <div class="footer-socials">
+          <a href="https://github.com/4MHARK"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/mhark-david-177b4731a/"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://x.com/ClutchFather"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Ademola David. All Rights Reserved.</p>
+      </div>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
