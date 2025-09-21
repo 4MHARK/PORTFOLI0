@@ -138,9 +138,9 @@ html{
 {
     width: 100%;
 }
-.navbar button{
+.navbar button {
     background-color: #d6ed17;
-    color: #000e18;  
+     
     border: none;
     padding: 0.7rem 1.5rem;
     font-size: 16px;
@@ -149,10 +149,15 @@ html{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.navbar button:hover{
+.navbar button :hover{
     background-color: #c0d314;
     box-shadow: 0 4px 10px rgba(214, 237, 23, 0.4);
     transform: translateY(-2px);
+}
+ 
+.navbar a{
+  text-decoration: none;
+  color: #000e18; 
 }
 
 
@@ -230,13 +235,17 @@ color: #d6ed17;
 }
 .hero-btn{
     background-color: #d6ed17;
-    color: #000e18;
+  
     border: none;
     border-radius: 6px;
     padding: 0.8rem 2rem;
-    font-size: 500;
     cursor: pointer;
     transition: all 0.3s ease;
+}
+.hero-btn a{
+  text-decoration: none;
+  font-size: 500;
+  color: #000e18;
 }
 .hero-btn:hover{
     background-color: #b5cb13;
